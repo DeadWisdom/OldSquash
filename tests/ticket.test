@@ -1,0 +1,100 @@
+> $squash init
+# New squash repo created: .squash
+
+> $squash project
+# No project found.
+
+> $squash project Squash --create
+# New project created: Squash
+
+slug:    squash
+name:    Squash
+description: 
+
+
+> $squash ticket -a Hello
+# Squash ticket 1
+slug:      hello
+name:      Hello
+type:      story
+status:    open
+owner:     
+reporter:  
+description: 
+
+
+> $squash ticket hello
+# Squash ticket 1
+slug:      hello
+name:      Hello
+type:      story
+status:    open
+owner:     
+reporter:  
+description: 
+
+
+> $squash ticket hello --name "The Hello Is Broken"
+# Squash ticket 1
+slug:      hello
+name:      The Hello Is Broken
+type:      story
+status:    open
+owner:     
+reporter:  
+description: 
+    
+
+> $squash ticket hello -d "The hello is really broken right now."
+# Squash ticket 1
+slug:      hello
+name:      The Hello Is Broken
+type:      story
+status:    open
+owner:     
+reporter:  
+description: 
+    The hello is really broken right now.
+
+
+> $squash ticket hello --status closed
+# Squash ticket 1
+slug:      hello
+name:      The Hello Is Broken
+type:      story
+status:    closed
+owner:     
+reporter:  
+description: 
+    The hello is really broken right now.
+
+
+> $squash list
+hello       The Hello Is Broken
+
+
+> $squash ticket -a 'The Groove is in the Heart'
+...
+
+> $squash list
+hello             The Hello Is Broken
+the-groove-heart  The Groove is in the Heart
+
+
+> $squash ticket hello --status closed
+...
+
+> $squash list --status open
+the-groove-heart  The Groove is in the Heart
+
+
+> $squash list -o
+the-groove-heart  The Groove is in the Heart
+
+
+> $squash ticket the-groove-heart --status closed
+...
+
+
+> $squash list -o
+No tickets found.

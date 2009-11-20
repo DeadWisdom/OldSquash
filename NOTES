@@ -1,0 +1,11 @@
+Design philosophies of Squash:
+
+- Project management is about five fundimental ideas: 
+    Projects, Tickets, Stories, Workflow, and Reporting.
+- Most models in the project management world are the same:
+    they just have different naming conventions, so Squash must allow admins 
+    to change these names.
+- Project management fails if users do not use the program, 
+    so Squash must be easy and fun to use, while retaining accesibility.
+- Administrating project management software is very difficult when you can't
+    get to the data, so Squash must be easy to interface with.

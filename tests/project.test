@@ -1,0 +1,105 @@
+> $squash init
+# New squash repo created: .squash
+
+
+> $squash project
+# No project found.
+
+
+> $squash project Squash --create --description "The Squash squash."
+# New project created: Squash
+
+slug:    squash
+name:    Squash
+description: 
+  The Squash squash.
+
+
+> $squash project
+slug:    squash
+name:    Squash
+description: 
+  The Squash squash.
+  
+  
+> echo delete | $squash project squash -x
+Enter 'delete' to confirm deleting the project 'Squash': 
+# Project deleted: Squash
+
+
+> $squash project --create --slug squash --name Squish
+# New project created: Squish
+
+slug:    squash
+name:    Squish
+description: 
+  
+
+> $squash project squash --description "The Squash squash."
+slug:    squash
+name:    Squish
+description: 
+  The Squash squash.
+
+
+> $squash project Squish -n Squash
+slug:    squash
+name:    Squash
+description: 
+  The Squash squash.
+
+
+> $squash project -c Test
+# New project created: Test
+
+slug:    test
+name:    Test
+description: 
+
+
+> $squash projects
+squash
+test
+
+
+> $squash project
+slug:    test
+name:    Test
+description: 
+
+
+> $squash switch squash
+# Working project set to: squash
+
+
+> $squash project
+slug:    squash
+name:    Squash
+description: 
+  The Squash squash.
+
+
+> $squash switch test
+# Working project set to: test
+
+
+> $squash project
+slug:    test
+name:    Test
+description: 
+
+
+> $squash --noinput project test -x
+# Project deleted: Test
+
+
+> $squash projects
+squash
+
+
+> $squash --noinput project squash -x
+# Project deleted: Squash
+
+
+> $squash projects
+No projects found.

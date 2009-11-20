@@ -1,0 +1,9 @@
+Squash is a distributed, configurable issue tracking system, with both web and
+console front ends.  It can be configured to be a bug-tracker, a general 
+issue-tracker, or an Agile methodology management tool.
+
+Squash follows the philosophy that your project management tool should be 
+easy to use and accessible, so that project management happens naturally,
+organically, and with minimum start up cost.
+
+http://bitbucket.org/DeadWisdom/squash/

@@ -1,0 +1,6 @@
+> $squash init
+# New squash repo created: .squash
+
+> ls .squash
+settings.py
+sqlite3.db
