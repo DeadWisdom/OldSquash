@@ -1,0 +1,19 @@
+syntax: glob
+*~
+*.pyc
+.DS_Store
+.project
+.pypirc
+sqlite.db
+sqlite3.db
+django
+test.log
+archive
+settings_local.py
+build
+*.egg-info
+dist
+*.out
+*.diff
+.squash
+_build
