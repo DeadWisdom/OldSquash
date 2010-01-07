@@ -6,13 +6,12 @@
 
 import os
 from setuptools import setup, find_packages
-from squash import __version__ as VERSION
 
 def read(file):
     return open(os.path.join(os.path.dirname(__file__), file)).read()
 
 setup(name='squash',
-      version = VERSION,
+      version = 'dev',
       description = 'A distributed, highly configurable issue tracking system.',
       long_description = read('ABOUT.txt'),
       classifiers = [

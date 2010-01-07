@@ -77,3 +77,4 @@ class List(Action):
 List.add_argument('-p', '--project', help='specify the project, otherwise squash will use the working project', type=str, nargs='?')
 List.add_argument('-t', '--status', help='only list tickets with this status', type=str, nargs='?')
 List.add_argument('-o', '--open', help='only list open tickets', action='store_true')
+
